@@ -1,0 +1,20 @@
+﻿StudentElectionV1
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\sys integ\liwag ver\422\StudentElectionV1\StudentElectionV1\obj\Debug\net8.0-windows\
+StudentElectionV1
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\sys integ\liwag ver\422\StudentElectionV1\StudentElectionV1\App.xaml
+6819160407
+
+11507580650
+206431215446
+LoginWindow.xaml;MainWindow.xaml;RegisterCandidate.xaml;RegisterUser.xaml;RegisterVoter.xaml;UserManagement.xaml;
+
+True
+

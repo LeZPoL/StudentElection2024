@@ -1,0 +1,230 @@
+﻿<Window x:Class="StudentElectionV1.RegisterCandidate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentElectionV1"
+        mc:Ignorable="d" WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" Background="Transparent"
+        Title="RegisterCandidate" Height="900" Width="1200">
+
+    <Border CornerRadius="30" BorderThickness="5" >
+        <Border.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="white" Offset="0.75" />
+                <GradientStop Color="#2f6deb" Offset=".15" />
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="900"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="400"/>
+                <RowDefinition Height="130"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Grid.RowSpan="2"                  
+              CornerRadius="30"
+              x:Name="blueBorder"                  
+              Margin="20">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="white" Offset="0.15" />
+                        <GradientStop Color="#2f6deb" Offset=".95" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Margin="10">
+                        <TextBlock HorizontalAlignment="Left"
+                        Text="Last Name" FontFamily="Segoe UI Light"
+                        FontSize="18" Width="150"                            
+                        Margin="5"/>
+                        <TextBox Width="400"
+                             Height="35"
+                             x:Name="txtLastName"
+                             FontSize="25"
+                             FontWeight="Bold"
+                             Text="{Binding ElementName=votersList, Path=SelectedItem.lastname, Mode=OneWay}"
+                    />
+                        <TextBlock HorizontalAlignment="Left"
+                        Text="First Name" FontFamily="Segoe UI Light"
+                        FontSize="18" Width="150"                            
+                        Margin="5"/>
+                        <TextBox Width="400"
+                             Height="35"
+                             x:Name="txtFirstName"
+                             FontSize="25"
+                             FontWeight="Bold"
+                             Text="{Binding ElementName=votersList, Path=SelectedItem.lastname, Mode=OneWay}"
+                    />
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Margin="10 0 0 5">
+                        <TextBlock x:Name="errorMessage"
+                               Foreground="Red"
+                               Text="There was an error"
+                               Margin="20 20 0 0"                                  
+                               FontSize="25" FontWeight="Bold" 
+                               Visibility="Hidden"
+                     />
+                    </StackPanel>
+                    <TextBlock  x:Name="txtVoterID"
+                           FontSize="25" FontWeight="Bold"
+                           Width="70" Height="35"
+                           HorizontalAlignment="Right"
+                           Visibility="Hidden"
+                           Text="{Binding ElementName=votersList, Path=SelectedItem.id, Mode=OneWay}"
+                 />
+                </StackPanel>
+            </Border>
+            <TextBlock Text="Position" FontSize="18" 
+                   FontFamily="Segoe UI Light"
+                   HorizontalAlignment="Left" 
+                   Margin="37,0,0,60" 
+                   Height="40" Grid.Row="1"
+         />
+            <ComboBox Width="220" Height="35" FontSize="20" 
+                  FontWeight="Bold" x:Name="cmbPosition"
+                  Margin="31,25,0,40"
+                  Text="{Binding ElementName=votersList, Path=SelectedItem.course, Mode=OneWay}"
+                  HorizontalAlignment="Left" Grid.Row="1">
+                <ComboBoxItem>Governor</ComboBoxItem>
+                <ComboBoxItem>Vice Governor</ComboBoxItem>
+                <ComboBoxItem>Secretary</ComboBoxItem>
+                <ComboBoxItem>Treasurer</ComboBoxItem>
+                <ComboBoxItem>Auditor</ComboBoxItem>
+                <ComboBoxItem>Business Manager</ComboBoxItem>
+                <ComboBoxItem>Public Relations Officer</ComboBoxItem>
+                <ComboBoxItem>Public Information Officer</ComboBoxItem>
+                <ComboBoxItem>IT Rep</ComboBoxItem>
+                <ComboBoxItem>ECE Rep</ComboBoxItem>
+                <ComboBoxItem>CPE Rep</ComboBoxItem>
+            </ComboBox>
+            <TextBlock Text="Party" FontSize="18" 
+                   FontFamily="Segoe UI Light"
+                   HorizontalAlignment="Left" 
+                   Margin="37,175,0,35" 
+                   Height="40"
+        />
+            <ComboBox Width="180" Height="35" x:Name="cmbParty" Margin="31,200,0,15"
+                  Text="{Binding ElementName=votersList, Path=SelectedItem.yearlevel, Mode=OneWay}"
+                  HorizontalAlignment="Left" FontSize="20" FontWeight="Bold">
+                <ComboBoxItem>ALAB</ComboBoxItem>
+                <ComboBoxItem>SIKLAB</ComboBoxItem>
+                <ComboBoxItem>Independent</ComboBoxItem>
+            </ComboBox>
+            <Border Background="White" Grid.Row="3" 
+                Grid.ColumnSpan="2" 
+                Margin="20 10 20 0" 
+                BorderThickness="3"
+                BorderBrush="#2f6deb"
+                CornerRadius="10">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Margin="20 5 40 0">
+                        <Button Width="80" Height="80" 
+                            BorderBrush="#2f6deb"
+                            BorderThickness="5"
+                            Background="Transparent"
+                            x:Name="btnAdd"
+                            Click="btnAdd_Click"
+                            Cursor="Hand">
+
+                            <Image Source="images/add-entry.png" Width="50" Height="50"/>
+                        </Button>
+                        <TextBlock Text="Add Voter" 
+                               HorizontalAlignment="Center"
+                    />
+                    </StackPanel>
+                    <StackPanel Margin="20 5 40 0" >
+                        <Button Width="80" Height="80" Background="Transparent"
+                            BorderBrush="#2f6deb"
+                            BorderThickness="5"
+                            Cursor="Hand"
+                            x:Name="btnUpdate" Click="btnUpdate_Click"
+                      >
+                            <Image Source="images/update-entry.png" Width="50" Height="50"/>
+                        </Button>
+                        <TextBlock Text="Edit Entry"
+                               HorizontalAlignment="Center"
+                    />
+                    </StackPanel>
+                    <StackPanel Margin="20 5 40 0" >
+                        <Button Width="80" Height="80" Background="Transparent"
+                            BorderBrush="#2f6deb"
+                            BorderThickness="5"
+                            Cursor="Hand"
+                            x:Name="btnDelete" Click="btnDelete_Click"
+                    >
+                            <Image Source="images/delete-entry.png" Width="50" Height="50"/>
+                        </Button>
+                        <TextBlock Text="Delete"
+                           HorizontalAlignment="Center"
+                />
+                    </StackPanel>
+                    <StackPanel Margin="20 5 40 0" >
+                        <Button Width="80" Height="80" Background="Transparent"
+                            BorderBrush="#2f6deb"
+                            Cursor="Hand"
+                            BorderThickness="5">
+                            <Image Source="images/search-icon.png" Width="50" Height="50"/>
+                        </Button>
+                        <TextBlock Text="Search"
+                           HorizontalAlignment="Center"
+                />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Text="Search Criteria" 
+                               HorizontalAlignment="Center"
+                               Height="20"
+                     />
+                        <TextBox x:Name="txtSearch" Width="400" Height="35"                 
+                                FontSize="20" FontWeight="Bold"
+                             BorderBrush="#2f6deb"
+                             
+                    />
+                    </StackPanel>
+                    <StackPanel Margin="80 5 40 0" >
+                        <Button Width="80" Height="80" Background="Transparent"
+                            x:Name="btnExit" Click="btnExit_Click"
+                            BorderBrush="#2f6deb"
+                            Cursor="Hand"
+                            BorderThickness="5">
+                            <Image Source="images/exit.png" Width="50" Height="50"/>
+                        </Button>
+                        <TextBlock Text="Exit"
+                           HorizontalAlignment="Center"
+                    />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <DataGrid Grid.Row="2" Grid.ColumnSpan="2" Margin="20 10 20 10"
+                  x:Name="candidateList"
+                  HorizontalGridLinesBrush="Gray"
+                  VerticalGridLinesBrush="Gray"
+                  GridLinesVisibility="All"
+                  HeadersVisibility="All"
+                  CanUserReorderColumns="False"
+                  CanUserSortColumns="True"
+                  CanUserResizeColumns="True"
+                  IsReadOnly="True"
+                  FontSize="20"
+                  FontWeight="DemiBold"
+                  ColumnWidth="Auto"                      
+                  BorderBrush="#2f6deb"
+                  BorderThickness="3"
+                  AlternatingRowBackground="#FFABD3F5"
+        />
+            <TextBlock Text="Register Candidate"
+                   FontSize="25" Height="35"
+                   HorizontalAlignment="Center"
+                   Margin="0 -200 0 0"
+                   Grid.Column="1"/>
+            <Image Grid.Column="1" Source="/images/candidate.png" 
+               Width="300" Height="350" Margin="0 50 0 0" Grid.RowSpan="2"
+        />
+        </Grid>
+    </Border>
+</Window>
