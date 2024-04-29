@@ -50,9 +50,9 @@ namespace StudentElectionV1
             // username = "root";
             // password = "";
             server = "sql6.freesqldatabase.com";
-            database = "sql6701485";
-            username = "sql6701485";
-            password = "qpw59Szx8A";
+            database = "sql6702798";
+            username = "sql6702798";
+            password = "tnhxSdnahe";
             mySQLConnection();
         }
 
