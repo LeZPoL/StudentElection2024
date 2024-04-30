@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\sys integ\\liwag ver\\422\\StudentElectionV1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|c:\\sys integ\\liwag ver\\422\\studentelectionv1\\studentelectionv1\\registervoter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|solutionrelative:studentelectionv1\\registervoter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|c:\\sys integ\\liwag ver\\422\\studentelectionv1\\studentelectionv1\\registeruser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|solutionrelative:studentelectionv1\\registeruser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|c:\\sys integ\\liwag ver\\422\\studentelectionv1\\studentelectionv1\\registercandidate.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|solutionrelative:studentelectionv1\\registercandidate.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|c:\\sys integ\\liwag ver\\422\\studentelectionv1\\studentelectionv1\\registeruser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|solutionrelative:studentelectionv1\\registeruser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|c:\\sys integ\\liwag ver\\422\\studentelectionv1\\studentelectionv1\\registervoter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B678AA4-050D-4EA1-9FE9-F173B5BD8DF5}|StudentElectionV1\\StudentElectionV1.csproj|solutionrelative:studentelectionv1\\registervoter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RegisterUser.xaml.cs",
               "DocumentMoniker": "C:\\sys integ\\liwag ver\\422\\StudentElectionV1\\StudentElectionV1\\RegisterUser.xaml.cs",
               "RelativeDocumentMoniker": "StudentElectionV1\\RegisterUser.xaml.cs",
               "ToolTip": "C:\\sys integ\\liwag ver\\422\\StudentElectionV1\\StudentElectionV1\\RegisterUser.xaml.cs",
               "RelativeToolTip": "StudentElectionV1\\RegisterUser.xaml.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAkwDYAAAAkAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwDYAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T01:25:15.122Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RegisterVoter.xaml.cs",
               "DocumentMoniker": "C:\\sys integ\\liwag ver\\422\\StudentElectionV1\\StudentElectionV1\\RegisterVoter.xaml.cs",
               "RelativeDocumentMoniker": "StudentElectionV1\\RegisterVoter.xaml.cs",
               "ToolTip": "C:\\sys integ\\liwag ver\\422\\StudentElectionV1\\StudentElectionV1\\RegisterVoter.xaml.cs",
               "RelativeToolTip": "StudentElectionV1\\RegisterVoter.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAwB0AAAAfAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwDQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T01:22:11.708Z",
               "EditorCaption": ""
@@ -58,7 +58,7 @@
               "RelativeDocumentMoniker": "StudentElectionV1\\RegisterCandidate.xaml.cs",
               "ToolTip": "C:\\sys integ\\liwag ver\\422\\StudentElectionV1\\StudentElectionV1\\RegisterCandidate.xaml.cs",
               "RelativeToolTip": "StudentElectionV1\\RegisterCandidate.xaml.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAgwE4AAAA3AAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAA3wEMAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T01:50:28.539Z",
               "EditorCaption": ""
